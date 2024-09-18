@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Payment Form</title>
+</head>
+<body>
+<form action="http://localhost:8080/compayGateway" method="post">
+    <label for="result" hidden="hidden" >Result</label>
+    <input  type="hidden" id="result" name="result"><br><br>
+
+    <label for="clientId">Client ID:</label>
+    <input type="text" id="clientId" name="clientId"><br><br>
+
+    <label for="acquirerId">Acquirer ID:</label>
+    <input type="text" id="acquirerId" name="acquirerId"><br><br>
+
+    <label for="amount">Amount:</label>
+    <input type="number" id="amount" name="amount" step="0.01"><br><br>
+
+    <label for="currency">Currency:</label>
+    <input type="text" id="currency" name="currency"><br><br>
+
+    <label for="shopUrl">Shop URL:</label>
+    <input type="url" id="shopUrl" name="shopUrl" ><br><br>
+
+    <label for="softDescriptor">Soft Descriptor:</label>
+    <input type="text" id="softDescriptor" name="softDescriptor"><br><br>
+
+    <label for="okUrl">OK URL:</label>
+    <input type="url" id="okUrl" name="okUrl" required><br><br>
+
+    <label for="failUrl">Fail URL:</label>
+    <input type="url" id="failUrl" name="failUrl"><br><br>
+
+    <label for="tranType">Transaction Type:</label>
+    <input type="text" id="tranType" name="tranType" value="CompayPayment"><br><br>
+
+    <label for="rnd">Random String:</label>
+    <input type="text" id="rnd" name="rnd"><br><br>
+
+    <label for="hash">Hash:</label>
+    <input type="text" id="hash" name="hash"><br><br>
+
+    <label for="hashAlgorithm">Hash Algorithm:</label>
+    <input type="text" id="hashAlgorithm" name="hashAlgorithm" value="ver3"><br><br>
+
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html>
